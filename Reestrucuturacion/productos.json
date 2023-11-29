@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "nombre": "Mesa de Centro Negro Monterrey",
+        "precio": "$5,599",
+        "dimensiones": "80cm x 60cm x 40cm",
+        "descripcion": "Mesa de centro elegante y funcional, perfecta para tu sala de estar.",
+        "imagen": "LOGO 1.jpeg"
+    },
+    {
+        "id": 2,
+        "nombre": "Silla Blanca Comfort",
+        "precio": "$199",
+        "dimensiones": "45cm x 50cm x 80cm",
+        "descripcion": "Silla moderna y cómoda para tu espacio de trabajo o comedor.",
+        "imagen": "LOGO 2.jpeg"
+    }
+]

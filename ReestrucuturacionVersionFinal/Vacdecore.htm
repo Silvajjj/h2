@@ -1,0 +1,413 @@
+ <!-- https://itecm-my.sharepoint.com/personal/l20120080_morelia_tecnm_mx/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fl20120080%5Fmorelia%5Ftecnm%5Fmx%2FDocuments%2FWeb%2FVACDECOR%2028%2D09%2D2023&view=0 -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logopestaña.png" type="logopestaña">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Inicio </title>
+</head>
+
+<body>
+
+     <!-- Encabezado -->
+    <header id="main-header">
+        <div class="black-navbar">
+            <img src="p.png" alt="Imagen Izquierda" class="navbar-img">
+            <div class="navbar-text">
+                Muebles que Perduran, Estilo que Trasciende
+            </div>
+            <img src="p.png" alt="Imagen Derecha" class="navbar-img">
+        </div>
+        <div class="custom-navbar">
+            <div class="search-bar">
+                <input type="text" placeholder="¿Que estas buscando?" class="custom-search-input">
+                <button class="custom-search-button">Buscar</button>
+            </div>
+            <div class="textou">
+                <p>Contactanos</p>
+                <p>Sucursales</p>
+               
+              </div>
+    
+        
+
+            <div class="login-button" style="position: relative;">
+                <a href="#" class="custom-login-link" id="login-button" >
+                    Iniciar Sesión
+                    <img src="carro-removebg-preview.png" alt="Imagen de Inicio de Sesión" class="login-img">
+                </a>
+            </div>
+
+
+
+          <!-- Puente entre la pagina principal y login -->
+            <script>
+                var loginButton = document.getElementById("login-button");
+                loginButton.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    window.open("login.html", "_blank");
+                });
+            </script>
+        
+
+    
+        </div>
+        <div class="barra">
+            <div class="seccion" id="Comedores">
+                <img src="mesa icon.png" alt="Icono Comedores" class="seccion-icono">
+                <a href="comedor.html">Comedores</a>
+            </div>
+    
+            <div class="seccion" id="Salas">
+                <img src="sala icon.png" alt="Icono sala" class="seccion-icono">
+                <a href="sala.html">Salas</a>
+            </div>
+    
+
+    
+              <div class="seccion" id="Oficina">
+                <img src="oficina icon.png" alt="Icono Oficina" class="seccion-icono">
+                <a href="oficina.html">Oficina</a> 
+              </div>
+    
+              <div class="seccion" id="Recamaras">
+                <img src="recam icon.png" alt="Icono Recamaras" class="seccion-icono">
+                <a href="recamaras.html">Recamaras</a>
+              </div>
+    
+
+           
+           
+          </div>
+                
+    </header>
+    <!-- El vender humo... digo estilo -->
+    <div class="full-screen-container">
+
+
+        <div class="full-screen-image">
+            <img src="Mesa preta_ 40 fotos para decorar com estilo e beleza.jpg" alt="vendehumo1">
+        </div>
+        <div class="full-screen-image">
+            <img src="living room that combines modern aesthetics with the spirit of American charm, designed for comfort.jpg" alt="vendehumo2">
+        </div>
+
+        <div class="full-screen-image">
+            <img src="registro.jpg" alt="vendehumo3">
+        </div>
+        <div class="full-screen-image">
+            <img src="Can Lighting.jpg" alt="vendehumo4">
+        </div>
+
+        <div class="full-screen-image">
+            <img src="How to Design a Bedroom that Exudes Coziness and Comfort • 333+ Images • [ArtFacade].jpg" alt="vendehumo5">
+        </div>
+        <div class="full-screen-image">
+            <img src="Ideas para combinar el color gris.jpg" alt="vendehumo6">
+        </div>
+
+       
+    </div>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    var images = document.querySelectorAll(".full-screen-image");
+    var index = 0;
+
+    function showImage(index) {
+        images[index].classList.add("active");
+        setTimeout(function() {
+            images[index].classList.remove("active");
+            images[index].style.transform = "translateX(-100%)";
+            index = (index + 1) % images.length;
+            images[index].style.transform = "translateX(0%)";
+            showImage(index);
+        }, 5000); // 5000 milisegundos = 5 segundos
+    }
+
+    showImage(index);
+});
+    </script>
+
+ <!--Mostrar inventario     https://elmuebleperfecto.com/-->
+
+ <div class="container">
+
+    <h1>Mas Vendidos</h1> <!-- Agrega este encabezado -->
+
+    <div class="prev-button">&lt;</div>
+ <div class="content">
+
+    <div class="product">
+        <img src="marmol-removebg-preview.png" alt="Mueble 1" class="product-img">
+        <div class="product-text">
+            Mesa de Centro<br>Estilo Monterrey
+            <br>
+            <span class="price">$5,599 MXN</span>
+            <br>
+            <a href="pagina_compra.html" class="buy-button">Comprar</a>
+            <button class="cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="mesa3-removebg-preview.Png" alt="Mueble 2" class="product-img">
+        <div class="product-text">
+            Mesa de marmol<br>GrandBlack
+            <br>
+            <span class="price">$4,500 MXN</span>
+            <br>
+            <a href="pagina_compra.html" class="buy-button">Comprar</a>
+            <button class="cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="closet-removebg-preview.png" alt="Mueble 3" class="product-img">
+        <div class="product-text">
+            Alacena Multiespacios
+            <br>
+            <span class="price">$6,000 MXN</span>
+            <br>
+            <a href="pagina_compra.html" class="buy-button">Comprar</a>
+            <button class="cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="mueble_madera-removebg-preview (1).png" alt="Mueble 4" class="product-img">
+        <div class="product-text">
+            Mesa Enchapado<br> Estilo Encino
+            <br>
+            <span class="price">$4,500 MXN</span>
+            <br>
+            <a href="pagina_compra.html" class="buy-button">Comprar</a>
+            <button class="cart-button">Agregar al carrito</button>
+        </div> 
+    </div>
+
+    <div class="product">
+        <img src="descarga.jpg" alt="logo1" class="product-img">
+        <div class="product-text">
+            Gran Gala Hall<br>
+            <br>
+            <span class="price">$10,399 MXN</span>
+            <br>
+            <a href="pagina_compra.html" class="buy-button">Comprar</a>
+            <button class="cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="descarga (1).jpg" alt="LOGO" class="product-img">
+        <div class="product-text">
+            Alcoba <br> Presidencial
+            <br>
+            <span class="price">$9,789 MXN</span>
+            <br>
+            <a href="pagina_compra.html" class="buy-button">Comprar</a>
+            <button class="cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="huds.jpg" alt="logo2" class="product-img">
+        <div class="product-text">
+            Sinfonía de <br>Sabores
+            <br>
+            <span class="price">$7,799 MXN</span>
+            <br>
+            <a href="pagina_compra.html" class="buy-button">Comprar</a>
+            <button class="cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <div class="product">
+        <img src="Bureau de direction Saturne.jpg" alt="LOGO4" class="product-img">
+        <div class="product-text">
+            Área<br>Corporativa
+            <br>
+            <span class="price">$5,599 MXN</span>
+            <br>
+            <a href="pagina_compra.html" class="buy-button">Comprar</a>
+            <button class="cart-button">Agregar al carrito</button>
+        </div>
+    </div>
+
+
+</div>
+<div class="next-button">&gt;</div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        var content = $('.content');
+        var productWidth = 320; // Ancho de un producto (incluyendo margen derecho)
+        var numVisibleProducts = 4;
+        var totalProducts = $('.product').length;
+        var currentPosition = 0;
+
+        $('.next-button').click(function() {
+            currentPosition += productWidth;
+            if (currentPosition >= (totalProducts - numVisibleProducts + 1) * productWidth) {
+                currentPosition = 0;
+            }
+            content.animate({
+                marginLeft: -currentPosition
+            }, 200);
+        });
+
+        $('.prev-button').click(function() {
+            currentPosition -= productWidth;
+            if (currentPosition < 0) {
+                currentPosition = (totalProducts - numVisibleProducts) * productWidth;
+            }
+            content.animate({
+                marginLeft: -currentPosition
+            }, 300);
+        });
+    });
+</script>
+
+<!--script de ventan emergente   -->
+<script>
+    // Obtener el botón "Agregar al carrito"
+    const cartButton = document.querySelector('.cart-button');
+
+    // Agregar un manejador de eventos al hacer clic en el botón "Agregar al carrito"
+    cartButton.addEventListener('click', function() {
+        // Mostrar una ventana emergente con el mensaje
+        const confirmation = confirm('Producto Agregado al Carrito');
+
+        // Si el usuario hace clic en "Aceptar" (true), mostrar opciones adicionales
+        if (confirmation) {
+            const seguirViendo = confirm('¿Deseas seguir viendo?');
+            if (seguirViendo) {
+                // Lógica para seguir viendo
+                alert('Continuar comprando...');
+            } else {
+                // Lógica para ver el carrito
+                alert('Ir al carrito...');
+            }
+        }
+    });
+</script>
+
+<!--catalgo estendido    -->
+<p>
+    
+      <script>
+        // Obtén todas las secciones con la clase "seccion"
+const secciones = document.querySelectorAll('.seccion');
+
+// Itera sobre cada sección y añade un evento de clic
+secciones.forEach(seccion => {
+    seccion.addEventListener('click', function() {
+        // Obtén el id de la sección clicada
+        const id = this.id;
+        
+        // Redirige a la página HTML correspondiente basada en el id
+        if (id === 'comedor') {
+            window.location.href = 'comedor.html';
+        } else if (id === 'decoracion') {
+            window.location.href = 'decoracion.html';
+        } else if (id === 'oficina') {
+            window.location.href = 'oficina.html';
+        } else if (id === 'recamaras') {
+            window.location.href = 'recamaras.html';
+        } else if (id === 'sala') {
+            window.location.href = 'sala.html';
+        } else if (id === 'tapete') {
+            window.location.href = 'tapete.html';
+        }
+       
+    });
+});
+      </script>
+      
+</p>
+
+
+  
+<!--poner tabla informativa    -->
+
+<div class="black-moreinfo">
+    <table >
+        <thead>
+            <tr>
+                <th class="moreinfo-text">CONOCENOS</th>
+                <th class="moreinfo-text">AYUDA</th>
+                <th class="moreinfo-text">MAS</th>
+                <th class="moreinfo-text">CONTACTANOS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="moreinfo-text">Lauro Dominguez#397 </td>
+                <td class="moreinfo-text"> Como comprar </td>
+                <td class="moreinfo-text"> Estado de cuenta</td>
+                <td class="moreinfo-text">Tienda en linea</td>
+                
+            </tr>
+            <tr>
+                <td class="moreinfo-text">Aviso de privacidad</td>
+                <td class="moreinfo-text">Garantias y Devoluciones</td>
+                <td class="moreinfo-text">Comprobante de compra</td>
+                <td class="moreinfo-text">Atencion a cliente 333748597</td>
+            </tr>
+            <tr>
+                <td class="moreinfo-text">Terminos y condiciones</td>
+                <td class="moreinfo-text">Preguntas frecuentes</td>
+                <td class="moreinfo-text">Servicios adicionales</td>
+                <td class="moreinfo-text">Vacdecor@hotmail.com</td>
+            </tr>
+            <tr>
+                <td class="moreinfo-text">¿Quiénes somos?</td>
+                <td class="moreinfo-text">Factura Electronica</td>
+                <td class="moreinfo-text">Unete al equipo</td>
+                <td class="moreinfo-text">Lun. a Sab. 10:00 - 21:00 hrs</td>
+            </tr>
+
+            <tr>
+                <td><img src="Paypal_rediseña_su_imagen_de_marca___Brandemia-removebg-preview (1).png"  alt="Paypal_rediseña_su_imagen_de_marca___Brandemia-removebg-preview" class="imenn">
+                </td>
+                <td>
+                    <img src="_Mercado_Pago__cuenta_digital_on_the_App_Store-removebg-preview (1).png"  alt="_Mercado_Pago__cuenta_digital_on_the_App_Store-removebg-preview" class="imenn">
+
+                </td>
+                <td>
+                    <img src="Mastercard_identity__2016_-removebg-preview (1).png"  alt="Mastercard_identity__2016_-removebg-preview" class="imenn">
+                </td>
+                <td>
+                    <img src="VISA_Logo_and_symbol__meaning__history__PNG__brand-removebg-preview.png"  alt="VISA_Logo_and_symbol__meaning__history__PNG__brand-removebg-preview" class="imenn">
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+
+
+</div>
+
+
+<!--en proceso de fabircacion    -->
+
+</body>
+
+<footer>
+    <div class = gold-fo>
+        <div class="fo-text">
+            2023 VACDECOR. Todos los derechos reservados
+        </div>
+    </div>
+    </footer>
+
+
+</html>

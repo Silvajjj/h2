@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="zoom.css">
+        <link rel="icon" href="logopestaña.png" type="logopestaña">
+        <style>
+            
+        </style>
+        <title>SALA</title>
+    </head>
+    <header id="main-header">
+        <div class="black-navbar">
+            <img src="p.png" alt="Imagen Izquierda" class="navbar-img">
+            <div class="navbar-text">
+                Comedores exclusivos para Familias con estilo
+            </div>
+            <img src="p.png" alt="Imagen Derecha" class="navbar-img">
+        </div>
+        <div class="custom-navbar">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar..." class="custom-search-input">
+                <button class="custom-search-button">Buscar</button>
+            </div>
+            <div class="login-button" style="position: relative;">
+                <a href="#" class="custom-login-link" id="login-button">
+                    Iniciar Sesión
+                    <img src="carro-removebg-preview.png" alt="Imagen de Inicio de Sesión" class="login-img">
+                </a>
+            </div>
+            <!-- Puente entre la página principal y login -->
+            <script>
+                var loginButton = document.getElementById("login-button");
+                loginButton.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    window.open("login.html", "_blank");
+                });
+            </script>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="section-title">Descubre Nuestra Colección de Comedores</h1>
+
+        <div class="section-content">
+            <p class="section-description">Encuentra muebles elegantes y funcionales para tu comedor.</p>
+
+            <!-- Lista de productos con efecto de zoom -->
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="SALA2.png" alt="Mueble 1" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Sala Whistler</h2>
+                        
+                        
+                        <p>La Sala Whistler es fabricada con materiales de primera clase, ofrece una experienciaúnica.</p>
+                        <p class="price">48,970.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="SALA1.png" alt="Mueble 2" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Sala Maltus Taupe</h2>
+                        
+                        <p>La Sala Maltus Taupe cuenta con estructura de madera y un diseño moderno.</p>
+                        <p class="price"> 19,060.00MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="SALA3.png" alt="Mueble 3" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Sala Ascher</h2>
+                    
+                        <p>Sumérgete en la comodidad y el estilo con nuestra <br>Sala Ascher. Un refugio de lujo que transforma tu espacio con elegancia y confort incomparables .</p>
+                        <p class="price">$49,990</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <!-- Repite este bloque para cada producto -->
+            </ul>
+
+            <!-- Duplica la primera lista debajo -->
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="sala4.png" alt="Mueble 4" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Sala Viena Charcoal </h2>
+                        
+                        <p>Diseñada para satisfacer las necesidades del espacio de televisión y sala de estar moderna</p>
+                        <p class="price">$ 99,990.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="sala5.png" alt="Mueble 5" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>     Sala Collins      </h2>
+                        
+                        <p>
+                            Experimenta el confort y la modernidad con nuestra <br> Sala Collins. Sofisticación y diseño contemporáneo para tu espacio .
+                        </p>
+                        <p class="price">$50,490.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="sala6.png" alt="Mueble 6" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Sala Doma</h2>
+                        
+                        <p>Descubre la elegancia atemporal con nuestra Sala Dama. Un toque clásico y sofisticado para tu hogar</p>
+                        <p class="price">$74,980.00MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <!-- Repite este bloque para cada producto -->
+            </ul>
+        </div>
+
+        
+    <!-- ... (resto del código) ... -->
+</body>
+</html>

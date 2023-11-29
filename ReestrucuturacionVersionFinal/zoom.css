@@ -1,0 +1,54 @@
+/* zoom.css */
+
+/* Modificaciones para lista horizontal */
+.product-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    margin-right: 20px; /* Espacio entre productos, ajusta según sea necesario */
+}
+
+.product-img {
+    max-width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover .product-img {
+    transform: scale(1.1); /* Ajusta el valor según sea necesario para el efecto de zoom */
+}
+
+/* Efecto de zoom independiente */
+.product-img-zoom {
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-item:hover .product-img-zoom {
+    transform: scale(1.2); /* Ajusta el valor según sea necesario para el efecto de zoom */
+}
+
+
+/* zoom.css */
+
+/* Agrega un estilo para las imágenes de productos para tener un tamaño fijo */
+.product-img {
+    width: 400px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
+/* Agrega margen superior a la lista de productos para evitar superposiciones */
+.product-list {
+    margin-top: 180px; /* Ajusta el valor según sea necesario */
+    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
+/* Ajusta el margen superior de la segunda lista para evitar la superposición */
+.product-list:last-child {
+    margin-top: 50px; /* Ajusta el valor según sea necesario */
+}
+
+

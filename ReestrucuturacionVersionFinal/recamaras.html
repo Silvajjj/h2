@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="zoom.css">
+        <link rel="icon" href="logopestaña.png" type="logopestaña">
+        <style>
+            
+        </style>
+        <title>RECAMARAS</title>
+    </head>
+    <header id="main-header">
+        <div class="black-navbar">
+            <img src="p.png" alt="Imagen Izquierda" class="navbar-img">
+            <div class="navbar-text">
+                Duerme comodo sueña elegante
+            </div>
+            <img src="p.png" alt="Imagen Derecha" class="navbar-img">
+        </div>
+        <div class="custom-navbar">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar..." class="custom-search-input">
+                <button class="custom-search-button">Buscar</button>
+            </div>
+            <div class="login-button" style="position: relative;">
+                <a href="#" class="custom-login-link" id="login-button">
+                    Iniciar Sesión
+                    <img src="carro-removebg-preview.png" alt="Imagen de Inicio de Sesión" class="login-img">
+                </a>
+            </div>
+            <!-- Puente entre la página principal y login -->
+            <script>
+                var loginButton = document.getElementById("login-button");
+                loginButton.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    window.open("login.html", "_blank");
+                });
+            </script>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="section-title">Descubre Nuestra Colección de Comedores</h1>
+
+        <div class="section-content">
+            <p class="section-description">Encuentra muebles elegantes y funcionales para tu comedor.</p>
+
+            <!-- Lista de productos con efecto de zoom -->
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="CAMA1.png" alt="Mueble 1" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Set Cama Y 2 Buros McCobb</h2>
+                        
+                        
+                        <p>Eleva tu descanso con nuestro Set Cama y 2 Buros <BR> McCobb. Diseño atemporal y funcionalidad para un dormitorio con estilo.</p>
+                        <p class="price"> 29,990.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="CAMA2.png" alt="Mueble 2" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Recámara Kolt Con 2 Burós</h2>
+                        
+                        <p>Estructura de madera solida, acojinado de espuma, tapiz 100% poliéster.</p>
+                        <p class="price"> 19,060.00MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="CAMA3.png" alt="Mueble 3" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Recámara Lugo</h2>
+                    
+                        <p>"Transforma tu espacio personal con <BR> la Recámara Lugo. Elegancia contemporánea y comodidad se fusionan en este conjunto excepcional.</p>
+                        <p class="price">$ 39,990.00</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <!-- Repite este bloque para cada producto -->
+            </ul>
+
+            <!-- Duplica la primera lista debajo -->
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="CAMA4.png" alt="Mueble 4" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Recámara Perugia Stone </h2>
+                        
+                        <p>Con un diseño excepcional y fabricada con Nogal Americano de la más alta calidad.</p>
+                        <p class="price">$ 64,990.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="CAMA5.png" alt="Mueble 5" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>     Recámara Bellac
+                        </h2>
+                        
+                        <p>
+                            Nuestra recámara Bellac ofrece la mejor combinación de materiales, con su estructura de madera de pino y tapiz de 100% poliéster.
+                        </p>
+                        <p class="price">$39,990.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="CAMA6.png" alt="Mueble 6" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Cama Con Dos Burós Valencia</h2>
+                        
+                        <p>La recámara Valencia es una excelente combinación de diseño y comodidad. </p>
+                        <p class="price">$84,990.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <!-- Repite este bloque para cada producto -->
+            </ul>
+        </div>
+
+        
+    <!-- ... (resto del código) ... -->
+</body>
+</html>

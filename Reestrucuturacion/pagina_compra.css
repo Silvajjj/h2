@@ -1,0 +1,47 @@
+h1 {
+    color: yellow;
+   }
+
+   body {
+    font-family: 'Times New Roman', serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.product-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.product-info h2,
+.product-info p,
+.product-info button {
+    margin-bottom: 15px;
+}
+
+.product-info button {
+    background-color: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+h1{
+    color: #FFD700
+}

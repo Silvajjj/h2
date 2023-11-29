@@ -1,0 +1,100 @@
+body {
+    background-image: url('registro.jpg'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.registration-container {
+    background-color: rgba(255, 255, 255, 0.6); /* Opacidad del fondo blanco (70%) */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 400px; /* Establece el ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    width: 80px; /* Establece un ancho fijo para el label */
+    margin-right: 10px; /* Agrega un margen derecho entre el label y el input */
+    text-align: right; /* Alinea el texto del label a la derecha */
+}
+
+.input-group input {
+    flex: 1; /* Hace que el input ocupe todo el espacio restante en el contenedor */
+    padding: 8px; /* Ajusta el relleno (padding) del input según sea necesario */
+    width: 100%; /* Establece el ancho del input al 100% */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #0608a8;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #c56d14;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: #fa8072;
+}
+
+/* Estilos para el botón de registro */
+.signup-container {
+    margin-top: 20px;
+}
+
+.signup-button {
+    background-color: #ffffbf;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.signup-button:hover {
+    background-color: #6f4e37;
+}

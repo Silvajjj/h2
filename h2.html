@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        li {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 0.5em;
+            padding: 1em;
+            width: 200px;
+            text-align: center;
+            background-color: white;
+            transition: transform 0.2s;
+        }
+
+        li:hover {
+            transform: scale(2);
+        }
+
+        img {
+            max-width: 300%;
+            max-height: 300px;
+            margin-bottom: 2em;
+        }
+
+        .carrito {
+            border: 1px solid #333;
+            border-radius: 5px;
+            margin: 1em;
+            padding: 1em;
+            width: 300px;
+            background-color: white;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.5em 1em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #total {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Juguetería Online</h1>
+    </header>
+
+    <ul>
+        <li>
+            <img src="30 Years of Handheld Game Systems.jpg" alt="PSP">
+            <h2>PSP</h2>
+            <p>Precio: $20</p>
+            <button onclick="agregarAlCarrito('PSP', 20)">Agregar al Carrito</button>
+        </li>
+
+        <li>
+            <img src="xbox one wallpaper by SlimLukas - Download on ZEDGE™ _ 80f1.jpg" alt="Xbox">
+            <h2>Xbox</h2>
+            <p>Precio: $15</p>
+            <button onclick="agregarAlCarrito('Xbox', 15)">Agregar al Carrito</button>
+        </li>
+
+        <li>
+            <img src="PS4 Controller  wallpaper by SrabonSana - Download on ZEDGE™ _ 9bf3.jpg" alt="PlayStation">
+            <h2>PlayStation</h2>
+            <p>Precio: $30</p>
+            <button onclick="agregarAlCarrito('PlayStation', 30)">Agregar al Carrito</button>
+        </li>
+
+        <li>
+            <img src="Speeding down the Hot Wheels Highway.jpg" alt="Pista">
+            <h2>Pista</h2>
+            <p>Precio: $80</p>
+            <button onclick="agregarAlCarrito('Pista', 80)">Agregar al Carrito</button>
+        </li>
+    </ul>
+
+    <div class="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito">
+            <!-- Los productos seleccionados se mostrarán aquí -->
+        </ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="realizarCompra()">Realizar Compra</button>
+    </div>
+
+    <script>
+        let carrito = [];
+        let total = 0;
+
+        function agregarAlCarrito(producto, precio) {
+            carrito.push({ producto, precio });
+            total += precio;
+            actualizarCarrito();
+        }
+
+        function actualizarCarrito() {
+            const listaCarrito = document.getElementById('lista-carrito');
+            const totalElemento = document.getElementById('total');
+
+            // Limpiar lista
+            listaCarrito.innerHTML = '';
+
+            // Mostrar productos en el carrito
+            carrito.forEach(item => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${item.producto} - $${item.precio}`;
+                listaCarrito.appendChild(listItem);
+            });
+
+            // Actualizar total
+            totalElemento.textContent = total;
+        }
+
+        function realizarCompra() {
+            // Aquí puedes implementar la lógica de compra, por ejemplo, redirigir a una página de pago.
+            alert('Compra realizada. Total: $' + total);
+            // Limpia el carrito después de la compra
+            carrito = [];
+            total = 0;
+            actualizarCarrito();
+        }
+    </script>
+
+</body>
+</html>
+

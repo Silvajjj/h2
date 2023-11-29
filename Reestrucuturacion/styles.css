@@ -1,0 +1,467 @@
+
+
+/* Estilo para la barra negra con las imágenes en las esquinas */
+#main-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #fff; /* Cambia el color de fondo según tu diseño */
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1); /* Sombra para un aspecto elevado */
+    z-index: 100; /* Asegúrate de que el encabezado fijo esté por encima de otros elementos */
+    height: 20px; /* Ajusta la altura según tus preferencias */
+
+}
+
+/* Estilos para ventanas emergentes */
+
+.black-navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.black-navbar .navbar-img {
+    width: 90px;
+    height: 65px;
+}
+
+.black-navbar .navbar-text {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    flex-grow: 1;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Estilo para la nueva barra de búsqueda y botón de inicio de sesión */
+
+
+.custom-navbar {
+    background-color: #9A8221;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+
+
+
+.custom-search-input {
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 90px;
+}
+
+.custom-search-button {
+    background-color: #5F4B0B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.custom-login-link {
+    color: white;
+    text-decoration: line-through;
+    padding: 5px 5px;
+    background-color: #5F4B0B;
+    border-radius: 100px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh; /* Usa un porcentaje del alto de la ventana */
+    background-color: #5F4B0B;
+    padding: 0 2vw; /* Usa un porcentaje del ancho de la ventana */
+    box-sizing: border-box;
+    margin-bottom: 100px;
+  }
+  
+  .seccion {
+    display: flex;
+    align-items: center;
+    color:black;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-left: 2vw; /* Usa un porcentaje del ancho de la ventana */
+    font-size: 2vw; /* Usa un porcentaje del ancho de la ventana */
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px; 
+  }
+  .seccion:first-child {
+    margin-left: 0;
+  }
+  .seccion .seccion-icono {
+    max-width: 24px; /* Ajusta el ancho máximo del icono según tus preferencias */
+    margin-right: 5px; /* Agrega espacio entre el icono y el texto */
+}
+
+  
+  .seccion img {
+    max-width: 25%; /* Usa un porcentaje del ancho de la ventana */
+    max-height: 90px; /* Establece una altura máxima para las imágenes */
+    margin-right: 2vw; /* Usa un porcentaje del ancho de la ventana */
+  }
+  
+  .seccion:hover {
+    transform: scale(1.1);
+  }
+  
+/* Estilo para vender humo digo el estilo */
+
+.full-screen-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+.search-bar {
+    display: flex;
+    max-width: 500px; /* ajusta el ancho máximo según tus necesidades */
+    margin: 0 left; /* centrar la barra de búsqueda */
+}
+
+input[type="text"] {
+    flex: 1; /* el input ocupará todo el espacio restante */
+    padding: 10px; /* ajusta el relleno según tus necesidades */
+    font-size: 18.5px; /* ajusta el tamaño de fuente según tus necesidades */
+}
+
+button {
+    padding: 10px; /* ajusta el relleno del botón según tus necesidades */
+    font-size: 16px; /* ajusta el tamaño de fuente del botón según tus necesidades */
+}
+.full-screen-image {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+.full-screen-container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh; /* 100% de la altura de la ventana */
+}
+
+.full-screen-image {
+  flex: 0 0 100%; /* Establece el ancho de cada imagen al 100% del contenedor */
+  transition: transform 0.5s ease-in-out; /* Agrega una transición suave para cambiar de una imagen a otra */
+}
+
+.full-screen-image img {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Ajusta la altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Cubre completamente el contenedor sin distorsionar la imagen */
+}
+
+
+}
+
+.full-screen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.full-screen-image.active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+
+/* actualiza para el siguiente bloque */
+.custom-login-link {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #ffffff; /* Color del texto del enlace */
+}
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Ajusta el espacio interno del contenedor si es necesario */
+}
+
+.login-img {
+    vertical-align: 1px; /* Alinea verticalmente la imagen con el texto */
+    margin-left: 10px; /* Agrega un margen izquierdo a la imagen para separarla del texto */
+}
+
+.login-button {
+    width: 200px; /* Establece un ancho fijo para el botón */
+    height: 50px; /* Establece una altura fija para el botón */
+    text-align: center; /* Centra el texto horizontalmente en el botón */
+    line-height: 50px; /* Centra el texto verticalmente en el botón */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Agrega esquinas redondeadas al botón */
+    overflow: hidden; /* Evita que el contenido se desborde del botón */
+    margin-left: 10px; /* Agrega un margen izquierdo entre el botón y el elemento anterior en el custom-navbar */
+}
+
+
+
+
+/* vende humo */
+/* Estilo para cada producto */
+/* Estilos base para los productos */
+.container {
+    width: 100%;
+    max-width: 1240px; /* Establece un ancho máximo para mantener el diseño */
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+}
+
+h1 {
+    font-family: Didot, "times new roman", 'Times New Roman', Times, serif;
+    color: #9A7D0A;
+    font-size: 40px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+
+
+.content {
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+    font-size: 0; /* Elimina el espacio entre los elementos inline-block */
+}
+
+.product {
+    display: inline-block;
+    text-align: left;
+    width: 25%; /* 4 productos en una fila, ocupando el 25% del contenedor */
+    margin-right: 1%; /* Agrega margen entre los productos */
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-right: 1%; /* Agrega margen entre los productos */
+}
+
+.product:last-child {
+    margin-right: 0;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #9A7D0A;
+    color: white;
+    padding: 10px 20px;
+}
+
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+
+
+/* Estilo para el contenedor de productos */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F8F8F8; /* Cambia el color de fondo según tus preferencias */
+}
+
+/* Estilo para cada producto */
+.product {
+    text-align: center;
+}
+
+.product-img {
+    width: 300px;
+    height: 310px;
+    margin-bottom: 10px;
+}
+
+.product-text {
+    font-size: 18px;
+    color: #333; /* Cambia el color del texto según tus preferencias */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.price {
+    color: #9A7D0A; /* Color dorado */
+    font-weight: bold;
+}
+
+
+/* Estilo para los botones "Comprar" y "Agregar al carrito" */
+.buy-button,
+.cart-button {
+    background-color: #9A7D0A; /* Color dorado */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    
+    margin-top: 10px;
+}
+
+.product-text a,
+.product-text button {
+    text-decoration: none;
+}
+
+.cart-button {
+    margin-left: 10px;
+}
+
+/* Estilo para la imagen junto al botón de inicio de sesión */
+.login-img {
+    width: 50px; /* Ancho deseado */
+    height: 40px; /* Alto deseado */
+    margin-left: 15px; /* Espacio entre el texto y la imagen */
+}
+
+/* grueso de todo el catalogo */
+
+
+  
+  @media (max-width: 768px) {
+    .seccion {
+      font-size: 4vw; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+  
+    .seccion img {
+      max-width: 30%; /* Ajusta el tamaño de las imágenes para pantallas más pequeñas */
+      max-height: 60px; /* Ajusta la altura máxima de las imágenes para pantallas más pequeñas */
+      height: auto; /* Para mantener la proporción de la imagen */
+      margin-top: 5px; 
+    }
+  }
+  
+/* abajo poner diseño del tabla informativa */
+
+/* zona negra donde indica mas info */
+
+.black-moreinfo {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    text-align: left;
+    padding: 5px;
+    width: 100vw; /* Utiliza el ancho total de la ventana */
+    height: 50vh; /* Usa el 50% de la altura de la ventana */
+    overflow: hidden; /* Evita el desplazamiento interno */
+    font-size: 50px; /* Ajusta el tamaño del texto según tus necesidades */
+}
+
+.black-moreinfo table {
+    width: 120vw; /* Usa el 90% del ancho de la ventana para la tabla */
+    max-width: 110%;
+    margin-top: 10px;
+    
+    /* Estilos adicionales de la tabla según sea necesario */
+}
+
+.black-moreinfo td,
+.black-moreinfo th {
+    padding: 7px;
+    /* Estilos adicionales de las celdas según sea necesario */
+}
+
+.black-moreinfo .moreinfo-img {
+    width: 85%;
+    max-width: 70px; /* Ajusta el ancho máximo de la imagen según tus necesidades */
+    height: auto;
+    margin-right: 100px; 
+}
+
+.textou {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    color:#F8F8F8
+  }
+  
+  .textou p {
+    margin-right: 20px;
+    font-size: 20px; /* Ajusta el tamaño de la letra según tus preferencias */
+    letter-spacing: 3px;
+    transition: color 0.3s ease; /* Agrega una transición suave al cambio de color */
+  }
+  .textou p:not(:last-child) {
+    margin-right: 40px; /* Ajusta el espacio entre las palabras según tus preferencias */
+  }
+  .textou p:hover {
+    color:#5F4B0B; /* Cambia el color al pasar el cursor por encima del texto */
+  }
+  
+
+
+.black-moreinfo .moreinfo-text {
+    color: white;
+    font-size: 3.1vh; /* Usa un tamaño de fuente relativo al 3% de la altura de la ventana */
+    flex-grow: 8;
+    text-align: left; /* Ajusta la alineación del texto a la izquierda */
+    margin-left: 170px; /* Agrega un margen izquierdo según tus preferencias */
+
+}
+.imagen-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 20px; /* Altura del contenedor */
+}
+
+.imenn {
+    max-width: 20%; /* Ajusta el ancho máximo de las imágenes según el contenedor */
+    height: auto;
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+
+
+/* diseño del footer */
+
+.gold-fo{
+    background-color: #9A8221;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100vw;
+}
+
+.gold-fo .fo-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+}

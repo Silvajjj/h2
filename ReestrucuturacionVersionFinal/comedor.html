@@ -1,0 +1,137 @@
+<!-- comedor.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="zoom.css">
+    <link rel="icon" href="logopestaña.png" type="logopestaña">
+    <style>
+        
+    </style>
+    <title>Comedor</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="black-navbar">
+            <img src="p.png" alt="Imagen Izquierda" class="navbar-img">
+            <div class="navbar-text">
+                Comedores exclusivos para Familias con estilo
+            </div>
+            <img src="p.png" alt="Imagen Derecha" class="navbar-img">
+        </div>
+        <div class="custom-navbar">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar..." class="custom-search-input">
+                <button class="custom-search-button">Buscar</button>
+            </div>
+            <div class="login-button" style="position: relative;">
+                <a href="#" class="custom-login-link" id="login-button">
+                    Iniciar Sesión
+                    <img src="carro-removebg-preview.png" alt="Imagen de Inicio de Sesión" class="login-img">
+                </a>
+            </div>
+            <!-- Puente entre la página principal y login -->
+            <script>
+                var loginButton = document.getElementById("login-button");
+                loginButton.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    window.open("login.html", "_blank");
+                });
+            </script>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="section-title">Descubre Nuestra Colección de Comedores</h1>
+
+        <div class="section-content">
+            <p class="section-description">Encuentra muebles elegantes y funcionales para tu comedor.</p>
+
+            <!-- Lista de productos con efecto de zoom -->
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="comedor2.png" alt="Mueble 1" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Set Mesa + 8 Sillas Hamburgo</h2>
+                        
+                        
+                        <p>Lujo y comodidad se fusionan en nuestro Set Mesa + 8 Sillas Hamburgo. Elegancia incomparable para tu hogar.</p>
+                        <p class="price">93,610.72 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="comedor1.jpg" alt="Mueble 2" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Mesa Comedor de marmol Aperlado</h2>
+                        
+                        <p>"Refinamiento absoluto con nuestra Mesa Comedor de Mármol Aperlado. La belleza del mármol eleva tu espacio con un toque de sofisticación."</p>
+                        <p class="price">63,800.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="comedor3.png" alt="Mueble 3" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Mesa Comedor De Mármol Copenhague</h2>
+                    
+                        <p>Llena de estilo tus reuniones con los materiales exclusivos de nuestra línea Copenhague y transmite frescura a tu hogar .</p>
+                        <p class="price">$61,990</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <!-- Repite este bloque para cada producto -->
+            </ul>
+
+            <!-- Duplica la primera lista debajo -->
+            <ul class="product-list">
+                <li class="product-item">
+                    <img src="comedor4.png" alt="Mueble 4" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Mesa Con Extensión Westbourne <br> + 6 Sillas Giratorias Westbourne</h2>
+                        
+                        <p>Versatilidad y estilo se encuentran en nuestra Mesa <br>con Extensión Westbourne junto con 6 
+                            Sillas Giratorias a juego. Diseño funcional y elegancia para tu espacio.</p>
+                        <p class="price">$ 69,990.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="comedor5.png" alt="Mueble 5" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>      Comedor Anya      </h2>
+                        
+                        <p>
+                            El comedor Anya ofrece una mesa de comedor y cuatro <br> sillas.
+                             Esta combinación de muebles de alta calidad le ofrece resistencia y durabilidad .
+                        </p>
+                        <p class="price">$22,990.00 MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="comedor6.png" alt="Mueble 3" class="product-img product-img-zoom">
+                    <div class="product-text">
+                        <h2>Comedor Austin con Sillas Owen</h2>
+                        
+                        <p>Este Comedor Austin con Sillas Owen es una combinación perfecta para tu hogar</p>
+                        <p class="price">$26,990.00MXN</p>
+                        <a href="pagina_compra.html" class="buy-button">Comprar</a>
+                        <button class="cart-button">Agregar al carrito</button>
+                    </div>
+                </li>
+                <!-- Repite este bloque para cada producto -->
+            </ul>
+        </div>
+
+        
+    <!-- ... (resto del código) ... -->
+</body>
+</html>
